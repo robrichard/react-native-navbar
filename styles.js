@@ -1,5 +1,7 @@
+import {ifIphoneX} from 'react-native-iphone-x-helper';
+
 const NAV_BAR_HEIGHT = 44;
-const STATUS_BAR_HEIGHT = 20;
+const STATUS_BAR_HEIGHT = ifIphoneX ? 44 : 20;
 
 module.exports = {
   navBarContainer: {
